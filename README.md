@@ -39,7 +39,7 @@ Parts
 *Reset ------Reset button----= .GND
 
 *GPIO0 D3—— A button----- .GND
-
+*GPIO3 RX—— B button----- .GND
 *GPIO15 D8——Piezo Speaker/headphone--GND
 
 *8266 i2c SSD1306 Oled
