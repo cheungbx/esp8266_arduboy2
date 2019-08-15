@@ -82,18 +82,20 @@ a slower I2C SSD1306 OLED and an external button function for PS2 joysticks.
  
 * How to port games written for ATmega32u4 Arduboy to ESP8266 Arduboy 
 =======================================================================
+
 * change "#include arduboy.h" to "#include arduboy2.h"
-* chnage all "pgm_read_word" to "pgm_read_dword"
-* comment to remove // #include <ArduboyTones.h>
-* comment to remove // ArduboyTones playTone(arduboy.audio.enabled);
-* change all "sound.tone" to "playTone"
 * add "BeepPin1 beep;" 
-* add  "playtone() function"
-* #define macro sound (f, d)  beep.tone(beep.freq((fff)), d / 3))
+* add  "sound() function"
+* comment to remove // #include <ArduboyTones.h>
+* comment to remove // ArduboyTones sound(arduboy.audio.enabled);
+* change all "sound.tone" to "playTone"
+* chnage all "pgm_read_word" to "pgm_read_dword"
 *  add beep.begin() after arduboy.begin();
 *  if EEPROM is used by the game to keep configs/high scores,
-*    add EEPROM.begin(40) at set up()
-*    add EEPROM.committ()  after the lst EEPORM.write()  and EEPROM.update()
+*    add EEPROM.begin(100) at setup()
+*    add EEPROM.commit()  after the last EEPROM.put(), 
+*    EEPORM.write()  and EEPROM.update() of each blocks of code.
+*  
 *  remove any reference to the Arduboy audio library that require timers to play back ground musics.
 *  that part of the library has not yet been ported.
 
