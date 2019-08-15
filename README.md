@@ -7,7 +7,16 @@ This is a fork of the hartmann1301/Arduboy2 to support onboard GPIO push buttons
 
 https://github.com/cheungbx/esp8266_arduboy2
 
-modified source of games written for ATmega32u4 Arduboy that has been successfully ported to ESP8266 Arduboy can be found in the  examples folder of this  library 
+modified source of games written for ATmega32u4 Arduboy that has been successfully ported to ESP8266 Arduboy can be found in the  examples folder of this  library :
+
+evade - no background music
+ArduBOYING
+ArduBreakout
+breakout-v
+Sirene
+Mystic Baloon
+PicoVaders (space invader)
+Shadow Runner
 
 Original licensing comments are kept in the modified source codes. Credits to the original creetors of these Arduboy games.
 
