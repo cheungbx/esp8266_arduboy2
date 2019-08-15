@@ -11,6 +11,9 @@ modified source of games written for ATmega32u4 Arduboy that has been successful
 
 Original licensing comments are kept in the modified source codes. Credits to the original creetors of these Arduboy games.
 
+Refer to the attached Fritzing wiring source and diagrams:
+* SP8266 Arduboy.fzz
+* SP8266 Arduboy.jpg
 
 Parts for the ESP8266 gameboard that can run games  using this modified Arduboy2 library for ESP8266
 *=============
