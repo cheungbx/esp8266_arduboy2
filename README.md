@@ -3,28 +3,29 @@
 Thanks to hartmann1301 who created the Arduboy2 library for ESP8266 to run Arduboy games on 
 a slower I2C SSD1306 OLED and an external button function for PS2 joysticks.
 
-This is a fork of the hartmann1301/Arduboy2 to support onboard GPIO push buttons instead of external PS2 joysticks
+* This is a fork of the hartmann1301/Arduboy2 to support onboard GPIO push buttons instead of external PS2 joysticks
 
-https://github.com/cheungbx/esp8266_arduboy2
+* https://github.com/cheungbx/esp8266_arduboy2
 
-modified source of games written for ATmega32u4 Arduboy that has been successfully ported to ESP8266 Arduboy can be found in the  examples folder of this  library :
+* modified source of games written for ATmega32u4 Arduboy that has been successfully ported to ESP8266 Arduboy can be found in the  
+* examples folder of this  library :
 
-evade - no background music
-ArduBOYING
-ArduBreakout
-breakout-v
-Sirene
-Mystic Baloon
-PicoVaders (space invader)
-Shadow Runner
+* evade - no background music
+* ArduBOYING
+* ArduBreakout
+* breakout-v
+* Sirene
+* Mystic Baloon
+* PicoVaders (space invader)
+* Shadow Runner
 
-Original licensing comments are kept in the modified source codes. Credits to the original creetors of these Arduboy games.
+* Original licensing comments are kept in the modified source codes. Credits to the original creetors of these Arduboy games.
 
-Refer to the attached Fritzing wiring source and diagrams:
+* Refer to the attached Fritzing wiring source and diagrams:
 * SP8266 Arduboy.fzz
 * SP8266 Arduboy.jpg
 
-Parts for the ESP8266 gameboard that can run games  using this modified Arduboy2 library for ESP8266
+* Parts for the ESP8266 gameboard that can run games  using this modified Arduboy2 library for ESP8266
 *=============
 
 *NODE MCU Mini D1 (ESP8266)
