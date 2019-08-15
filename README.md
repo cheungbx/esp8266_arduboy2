@@ -1,28 +1,31 @@
+2019 Jul 31   cheungbx
 
 Thanks to hartmann1301 who created the Arduboy2 library for ESP8266 to run Arduboy games on 
 a slower I2C SSD1306 OLED and an external button function for PS2 joysticks.
 
-This is a fork of the hartmann1301/Arduboy2 for onboard GPIO push buttons
+This is a fork of the hartmann1301/Arduboy2 to support onboard GPIO push buttons instead of external PS2 joysticks
 
 https://github.com/cheungbx/esp8266_arduboy2
 
+modified source of games written for ATmega32u4 Arduboy that has been successfully ported to ESP8266 Arduboy can be found in the  examples folder of this  library 
 
-2019 Jul 31
+Original licensing comments are kept in the modified source codes. Credits to the original creetors of these Arduboy games.
 
-Parts 
+
+Parts for the ESP8266 gameboard that can run games  using this modified Arduboy2 library for ESP8266
 *=============
 
 *NODE MCU Mini D1 (ESP8266)
 
 *I2C SSD1306 OLED 128x64
 
-*7 buttons
+*6 buttons 
 
 *1 on/off switch
 
 *1 3.7V LIPO Battery
 
-*Perf Board
+*Perf Board or breadboard
 
 *Wires
 
@@ -36,25 +39,23 @@ Parts
 
 *GPIO2 D4—— Down button----- .GND
 
-*Reset ------Reset button----= .GND
-
-*GPIO0 D3—— A button----- .GND
+*GPIO0 D3—— A button----- .GND   // ** WARNING ** DO NOT press this button when flashing firmware.
 
 *GPIO3 RX—— B button----- .GND
 
 *GPIO15 D8——Piezo Speaker/headphone--GND
 
-*8266 i2c SSD1306 Oled
+*ESP8266     i2c SSD1306 Oled
 
 *=============================
 
-*3.3V -----VCC
+*3.3V ------------VCC
 
-*GND -----GND
+*GND -------------GND
 
-*GPIO5 D1 -----SCL
+*GPIO5 D1 --------SCL
 
-*GPIO4 D2—-----SDA
+*GPIO4 D2—--------SDA
 
 *Libraries used:
 
@@ -64,6 +65,34 @@ Parts
 
 * https://github.com/pasko-zh/brzo_i2c
 
+
+ 
+* How to port games written for ATmega32u4 Arduboy to ESP8266 Arduboy 
+=======================================================================
+* change "#include arduboy.h" to "#include arduboy2.h"
+* chnage all "pgm_read_word" to "pgm_read_dword"
+* comment to remove // #include <ArduboyTones.h>
+* comment to remove // ArduboyTones playTone(arduboy.audio.enabled);
+* change all "sound.tone" to "playTone"
+* add "BeepPin1 beep;" 
+* add  "playtone() function"
+* #define macro sound (f, d)  beep.tone(beep.freq((fff)), d / 3))
+*  add beep.begin() after arduboy.begin();
+*  if EEPROM is used by the game to keep configs/high scores,
+*    add EEPROM.begin(40) at set up()
+*    add EEPROM.committ()  after the lst EEPORM.write()  and EEPROM.update()
+*  remove any reference to the Arduboy audio library that require timers to play back ground musics.
+*  that part of the library has not yet been ported.
+
+*  Caveats
+*===============
+*  remove any reference to the Arduboy audio library that require timers to play back ground musics.
+*  that part of the library has not yet been ported.
+*  games that directly control the SPI bus to write to OLED display need much more work to port instead of the simple steps above.
+
+
+
+*** original comments from hartmann1301/Arduboy2 github readme file ********
 *Brzo I2C by Pscal Kurtansky version 1.3.3.
 * A fast I2C library written in assembly for the ESP8266.
 
