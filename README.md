@@ -123,8 +123,7 @@ PARTS
 
 * https://github.com/pasko-zh/brzo_i2c
 
-
-We can use these steps to convert Arduboy games to run on ESP8266 Arduboy.
+Simple Steps to convert Arduboy games to run on ESP8266 Arduboy.
 =======================================================================
 * change "#include arduboy.h" to "#include arduboy2.h"
 * add "BeepPin1 beep;"
@@ -141,8 +140,9 @@ We can use these steps to convert Arduboy games to run on ESP8266 Arduboy.
 * add EEPROM.begin(100) at setup() // 100 is just a rough max no. need to check the size 
 * add EEPROM.commit() after the last EEPROM.put(), EEPORM.write() and EEPROM.update() of each blocks of code.
 
-* Caveats 
-*===============
+Caveats 
+===============
+
 ** remove any reference to the Arduboy audio library that require timers to play back ground musics.
 * that part of the library has not yet been ported
 * remove any reference to the ATMlib for  complex sound output 
