@@ -1,12 +1,12 @@
 2019 Jul 31   cheungbx
-I know this is not a new topic. Many people have discussed running Arduboy games on ESP8266. However, I have not seen any source codes shared by anyone for games running on  a ESP8266 with working Aruboy2 library that support push buttons. Hence I try to make one myself and share it.
+
+Many people have discussed and shared videos running Arduboy games on ESP8266. However, I have not seen any source codes shared by anyone for games running on  a ESP8266 with working Aruboy2 library that support push buttons. Hence I try to make one myself and share it.
 Here is my youtube video that demonstrate the games that are working so far.
 
 https://youtu.be/CinJb7gifH8
 
 
-
-From this forum and others,  ESP8266 has pros and cons as a portable game console. Here is my list of it:
+ESP8266 has pros and cons as a portable game console compared to the original Arduboy using ATmega32U4 (Pro Micro0). 
 con
 ===
 - heavy power consumption, will only run for 1-2 hours max on a tiny LIPO battery.
