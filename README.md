@@ -60,6 +60,9 @@ TESTED on ESP8266 Arduboy
 
 Here are the pins used and wiring diagram. I am using a Node MCI D1 Mini on a bread board and then created a perf board version. Next, I I will try to build a tiny one using a mini-joystick (as small as  button) and the bare ESP12E module. Programming will be done through a ESP_USB programmer.
 
+
+https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP8266%20Arduboy.jpg
+
 PARTS
 ========
 *NODE MCU Mini D1 (ESP8266)
@@ -147,6 +150,4 @@ Caveats
 * that part of the library has not yet been ported
 * remove any reference to the ATMlib for  complex sound output 
 * games that directly control the SPI bus to write to OLED display need much more work to port instead of the simple steps above.
-
-![ESP8266%20Arduboy|690x461](ESP8266 Arduboy.jpg) 
 
