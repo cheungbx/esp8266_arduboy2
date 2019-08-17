@@ -3,6 +3,8 @@
 Many people have discussed and shared videos running Arduboy games on ESP8266. However, I have not seen any source codes shared by anyone for games running on  a ESP8266 with working Aruboy2 library that support push buttons. Hence I try to make one myself and share it.
 Here is my youtube video that demonstrate the games that are working so far.
 
+[![Watch the video](https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP%20Arduboy%20Video.jpg)](https://youtu.be/CinJb7gifH8)
+
 https://youtu.be/CinJb7gifH8
 
 
