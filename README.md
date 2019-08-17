@@ -107,8 +107,8 @@ GPIO12  D6——   Left
 GPIO14  D5——   UP     
 GPIO2   D4——   Down 
 
-GPIO0   D3——   A
-GPIO3   RX ——  B     
+GPIO0   D3——   A  // warning ** do not press this button when flashing firmware
+GPIO3   RX ——  B  // warning ** do not press this button when flashing firmware    
 GPIO15  D8——   Speaker (connect the other end to GND)
 
 *ESP8266 i2c SSD1306 Oled
