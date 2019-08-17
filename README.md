@@ -79,6 +79,10 @@ PARTS
 * Connect the following pins to their own 1K resistors then to GND :
 * D8 (GPIO15)
 
+See this alternate wiring diagram for ESP 12E.
+
+![ESP12E Arduboy wiring diagram](https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP12E%20Arduboy%20.jpg)
+
 
 *I2C SSD1306 OLED 128x64 
 
