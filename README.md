@@ -24,10 +24,19 @@ Pro
 + Simpler wiring if you use the Node MCU D1 mini to make the board.
 + Cheaper overall cost.
 
-Thanks to hartmann1301 who created the Arduboy2 library for ESP8266 to run Arduboy games on a slower I2C SSD1306 OLED and an external button function for PS2 joysticks.
-However, I found that library not supporting push buttons  for ESP8266 directly and require external functions to provide that function. This add extra efforts to port Arduboy games over to an ESP8266 Arduboy. 
+Arduboy2 library for ESP8266 with push button supports I2C OLED and single pin sound
+=====================================================================================
 
-I modified that a bit to support onboard GPIO push buttons.
+Thanks to hartmann1301 who created the Arduboy2 library based on the Arduboy2 library for the Slim boy version of Arduboy that runs on the Adruino Nano and I2C OLED dipslay. This ARduboy2 library for ESP8266 allow  Arduboy games to be run on ESP8266 with  a slower I2C SSD1306 OLED and an external button function for PS2 joysticks.  refer to https://github.com/hartmann1301/Arduboy2
+
+However, I found that library not supporting push buttons  for ESP8266 directly. The game need to be programmed with extra external functions to read the push buttons. This add extra efforts to port Arduboy games over to an ESP8266 Arduboy. 
+
+I modified that a bit to define the mapping of GPIO push buttons for ESP8266.
+As ESP8266 has limited pins, so I have to use both the GPIO 0 and RX for A and B buttons.
+Hence make sure you do not accidentally push these two buttons when you are flashing the firmware.
+Otherwise, the flash may fail and you may need to redo the flash again.
+
+Here is th elink to my github
 * https://github.com/cheungbx/esp8266_arduboy2
 
 As the ESP8266 already have 4MB memory, it should be able to hold many games on the go and self-flash it using a boot loader like what @Mr.Blinky did for the original Arduboy flash cartridge.
