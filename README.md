@@ -55,13 +55,24 @@ PARTS
 ========
 *NODE MCU Mini D1 (ESP8266)
 
-*I2C SSD1306 OLED 128x64
+* if you want to build a custom design board that is  super small, you can use the ESP8266 12E module directly, and get a USB_to_ESP programmer  board to program it.
+* The ESP8266 12E is a bare board and you need to tie certain pins to ground and other pins to VCC to make it run firmware, or put it in the a programming mode.
+* Connect the following pins to their own 1K resistors then to VCC (3.3V) : 
+* Reset 
+* EN  (chip enable)
+* Connect the following pins to their own 1K resistors then to GND :
+* D8 (GPIO15)
 
-*6 buttons
 
-*1 on/off switch
+*I2C SSD1306 OLED 128x64 
 
-*1 3.7V LIPO Battery
+*six push buttons
+
+*extra push button for rest (for perf board version only)
+
+*power on/off switch (or perf board version only)
+
+*3.7V LIPO Battery
 
 *Perf Board or breadboard
 
