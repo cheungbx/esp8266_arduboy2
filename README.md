@@ -69,8 +69,11 @@ PARTS
 *NODE MCU Mini D1 (ESP8266)
 
 * if you want to build a custom design board that is  super small, you can use the ESP8266 12E module directly, and get a USB_to_ESP programmer  board to program it.
-* The ESP8266 12E is a bare board and you need to tie certain pins to ground and other pins to VCC to make it run firmware, or put it in the a programming mode.
+* The ESP8266 12E is a bare board and you need to tie certain pins to ground and other pins to VCC to make it run firmware, or put it in the a programming mode. 
+* Make the following permanent connections to put the ESP8266 12E at the normal firmware running mode. 
+* Then leave the rest to the USB_to_ESP programmer to flip the EN, Reset and GPIO 0 pins to the right level to put it at a firmware programming mode.
 * Connect the following pins to their own 1K resistors then to VCC (3.3V) : 
+* GPIO 0 (D3)
 * Reset 
 * EN  (chip enable)
 * Connect the following pins to their own 1K resistors then to GND :
@@ -93,19 +96,16 @@ PARTS
 
 *Pins for buttons
 
-*GPIO13 D7—— Rightbutton----- .GND
+*All buttons tie to GND
 
-*GPIO12 D6—— Left button----- .GND
+GPIO13  D7---  Right    
+GPIO12  D6——   Left      
+GPIO14  D5——   UP     
+GPIO2   D4——   Down 
 
-*GPIO14 D5—— UP button----- .GND
-
-*GPIO2 D4—— Down button----- .GND
-
-*GPIO0 D3—— A button----- .GND // ** WARNING ** DO NOT press this button when flashing firmware.
-
-*GPIO3 RX—— B button----- .GND
-
-*GPIO15 D8——Piezo Speaker/headphone--GND
+GPIO0   D3——   A
+GPIO3   RX ——  B     
+GPIO15  D8——   Speaker (connect the other end to GND)
 
 *ESP8266 i2c SSD1306 Oled
 
