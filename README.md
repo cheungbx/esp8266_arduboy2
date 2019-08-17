@@ -15,7 +15,7 @@ a slower I2C SSD1306 OLED and an external button function for PS2 joysticks.
 * ArduBreakout
 * breakout-v
 * Sirene
-* Mystic Baloon
+* Mystic Balloon
 * PicoVaders (space invader)
 * Shadow Runner
 
