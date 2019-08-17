@@ -6,7 +6,8 @@ Here is my youtube video that demonstrate the games that are working so far.
 https://youtu.be/CinJb7gifH8
 
 
-ESP8266 has pros and cons as a portable game console compared to the original Arduboy using ATmega32U4 (Pro Micro0). 
+ESP8266 has pros and cons as a portable game console compared to the original Arduboy using ATmega32U4 (Pro Micro).
+
 con
 ===
 - heavy power consumption, will only run for 1-2 hours max on a tiny LIPO battery.
@@ -94,11 +95,11 @@ PARTS
 
 *GPIO4 D2—--------SDA
 
-*Libraries used:
+* Extra Libraries required to work with the ESP8266_Arduboy2 library:
 
-*https://github.com/ThingPulse/esp8266-oled-ssd1306 version 4.0.0
+* https://github.com/ThingPulse/esp8266-oled-ssd1306 version 4.0.0
 
-*ssd1306xled Library for SSD1306 oled display 128x64
+* Brzo I2C library to drive SSD 1306 display at the max. I2C. speed.
 
 * https://github.com/pasko-zh/brzo_i2c
 
