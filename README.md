@@ -146,5 +146,7 @@ Caveats
 ** remove any reference to the Arduboy audio library that require timers to play back ground musics.
 * that part of the library has not yet been ported
 * remove any reference to the ATMlib for  complex sound output 
-* games that directly control the SPI bus to write to OLED display need much more work to port instead of the simple steps above.![ESP8266%20Arduboy|690x461](upload://qMeg5GNT47SPhCgXriHvwmMjjpZ.jpeg) ![24%20PM|690x459](upload://kJahM4oWItg4WwYfUGY5yVyl2mp.jpeg)
+* games that directly control the SPI bus to write to OLED display need much more work to port instead of the simple steps above.
+
+![ESP8266%20Arduboy|690x461](ESP8266 Arduboy.jpg) 
 
