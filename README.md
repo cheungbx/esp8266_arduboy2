@@ -81,7 +81,7 @@ PARTS
 
 See this alternate wiring diagram for ESP 12E.
 
-![ESP12E Arduboy wiring diagram](https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP12E%20Arduboy%20.jpg)
+![ESP12E Arduboy wiring diagram]()
 
 
 *I2C SSD1306 OLED 128x64 
