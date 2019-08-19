@@ -111,6 +111,8 @@ GPIO0   D3——   A  // warning ** do not press this button when flashing firmw
 GPIO3   RX ——  B  // warning ** do not press this button when flashing firmware    
 GPIO15  D8——   Speaker (connect the other end to GND)
 
+A0 -    Paddle - connect to middle pin of 10K VR. Connect left pin to Ground, right pin to VCC. 
+
 *ESP8266 i2c SSD1306 Oled
 
 *=============================
