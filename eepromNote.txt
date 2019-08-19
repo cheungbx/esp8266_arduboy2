@@ -1,0 +1,37 @@
+1. go to your eeprom lib, on my win10 system the path looks like this:
+
+C:\Users\*your username*\Documents\ArduinoData\packages\esp8266\hardware\esp8266\2.4.2\libraries\EEPROM
+
+2. add something like this to your EEPROM.cpp :
+
+	void EEPROMClass::update(int const address, uint8_t const value) {
+		if (address < 0 || (size_t)address >= _size)
+			return;
+		if(!_data)
+			return;
+
+		// get data from eeprom
+		uint8_t storedData = read(address);
+		
+		// check if the same
+		if (storedData == value)
+			return;
+		
+		// call of write() because it is different
+		write(address, value);
+	}
+
+and the coresponding header prototype to your EEPROM.h:
+
+  void update(int const address, uint8_t const val);  
+	
+3. now your code will compile, but It will still not work, the problem is you need to call:
+
+  EEPROM.begin(*needed bytes of eeprom*);
+
+and
+
+  EEPROM.commit();
+
+after everytime you wrote data via update/put... functions.
+	
