@@ -5,7 +5,8 @@ Here is my youtube video that demonstrate the games that are working so far.
 
 https://youtu.be/CinJb7gifH8
 
-![ESP8266%20Arduboy%20Video](https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP8266%20Arduboy%20Video.jpg) 
+[![ESP8266%20Arduboy%20Video](https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP8266%20Arduboy%20Video.jpg)](https://youtu.be/CinJb7gifH8)
+
 
 ESP8266 has pros and cons as a portable game console compared to the original Arduboy using ATmega32U4 (Pro Micro).
 
