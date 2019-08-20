@@ -4,7 +4,7 @@ Many people have discussed and shared videos running Arduboy games on ESP8266. H
 Here is my youtube video that demonstrate the games that are working so far.
 
 https://youtu.be/CinJb7gifH8
-
+![ESP8266%20Arduboy](https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP8266%20Arduboy.jpg) 
 
 ESP8266 has pros and cons as a portable game console compared to the original Arduboy using ATmega32U4 (Pro Micro).
 
@@ -60,6 +60,8 @@ TESTED on ESP8266 Arduboy
 
 Here are the pins used and wiring diagram. I am using a Node MCI D1 Mini on a bread board and then created a perf board version. Next, I I will try to build a tiny one using a mini-joystick (as small as  button) and the bare ESP12E module. Programming will be done through a ESP_USB programmer.
 
+![ESP8266%20Arduboy%20Video](https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP%20Arduboy%20Video.jpg) 
+
 PARTS
 ========
 *NODE MCU Mini D1 (ESP8266)
@@ -73,6 +75,7 @@ PARTS
 * EN  (chip enable)
 * Connect the following pins to their own 1K resistors then to GND :
 * D8 (GPIO15)
+![ESP12E$20Mini%20Arduboy](https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP12E%20Arduboy%20.jpg) 
 
 
 *I2C SSD1306 OLED 128x64 
@@ -150,4 +153,4 @@ Caveats
 ** remove any reference to the Arduboy audio library that require timers to play back ground musics.
 * that part of the library has not yet been ported
 * remove any reference to the ATMlib for  complex sound output 
-* games that directly control the SPI bus to write to OLED display need much more work to port instead of the simple steps above.![ESP8266%20Arduboy|690x461](upload://qMeg5GNT47SPhCgXriHvwmMjjpZ.jpeg) ![24%20PM|690x459](upload://kJahM4oWItg4WwYfUGY5yVyl2mp.jpeg)![IMG_1176|666x500](upload://n6afNqnwSv1Q7tGH1xIAmshavVF.jpeg) ![IMG_1177|666x500](upload://244QG03bwMxAzHFd0JtbcPvEcTn.jpeg)![IMG_E1185|378x500](upload://5GXaezWNkFdY8W4uuXlFZU2VI9T.jpeg)![IMG_1187|375x500](upload://91P8w3gluuXxDBQxLwcGMJT8o5p.jpeg)![ESP12E%20Arduboy%20|653x500](upload://xB4ouuADaBcM3u7KdeJ0QN8F7if.jpeg)
+* games that directly control the SPI bus to write to OLED display need much more work to port instead of the simple steps above.
