@@ -4,7 +4,8 @@ Many people have discussed and shared videos running Arduboy games on ESP8266. H
 Here is my youtube video that demonstrate the games that are working so far.
 
 https://youtu.be/CinJb7gifH8
-![ESP8266%20Arduboy](https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP8266%20Arduboy.jpg) 
+
+![ESP8266%20Arduboy%20Video](https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP%20Arduboy%20Video.jpg) 
 
 ESP8266 has pros and cons as a portable game console compared to the original Arduboy using ATmega32U4 (Pro Micro).
 
@@ -60,7 +61,8 @@ TESTED on ESP8266 Arduboy
 
 Here are the pins used and wiring diagram. I am using a Node MCI D1 Mini on a bread board and then created a perf board version. Next, I I will try to build a tiny one using a mini-joystick (as small as  button) and the bare ESP12E module. Programming will be done through a ESP_USB programmer.
 
-![ESP8266%20Arduboy%20Video](https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP%20Arduboy%20Video.jpg) 
+
+![ESP8266%20Arduboy](https://github.com/cheungbx/esp8266_arduboy2/blob/master/ESP8266%20Arduboy.jpg) 
 
 PARTS
 ========
