@@ -107,7 +107,8 @@ PARTS
 
 *GPIO0 D3—— A button----- .GND // ** WARNING ** DO NOT press this button when flashing firmware.
 
-*GPIO3 RX—— B button----- .GND // ** WARNING ** DO NOT press this button when flashing firmware.
+*GPIO16 D0—— B button----- .GND // ** Tie the ther end of this button through a 10K resistor to VCC, 
+*                                       as it cannot be pulled high by software.
 
 *A0                     Paddle ---  connect to middle pin of 10K VR, connect left pin to VCC, right pin to Ground
 
