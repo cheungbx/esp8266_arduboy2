@@ -202,7 +202,7 @@
 #define PIN_UP_BUTTON D5
 #define PIN_DOWN_BUTTON D4
 #define PIN_A_BUTTON D3
-#define PIN_B_BUTTON 3
+#define PIN_B_BUTTON D0
 /*
 #define SPEAKER_1_PORT PORTB
 #define SPEAKER_1_DDR DDRB
