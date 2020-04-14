@@ -1,6 +1,12 @@
+Either replace the EEPROM.ccp and EEPROM.h files in  
+windows - C:\Users\*your username*\Documents\ArduinoData\packages\esp8266\hardware\esp8266\2.6.3\libraries\EEPROM
+Mac - /Users/*your username*/Library/Adruino15/packages/esp8266/hardware/esp8266/2.6.3/libraries/EEPROM
+
+Or, change it by this step
 1. go to your eeprom lib, on my win10 system the path looks like this:
 
-C:\Users\*your username*\Documents\ArduinoData\packages\esp8266\hardware\esp8266\2.4.2\libraries\EEPROM
+windows - C:\Users\*your username*\Documents\ArduinoData\packages\esp8266\hardware\esp8266\2.6.3\libraries\EEPROM
+Mac - /Users/*your username*/Library/Adruino15/packages/esp8266/hardware/esp8266/2.6.3/libraries/EEPROM
 
 2. add something like this to your EEPROM.cpp :
 
