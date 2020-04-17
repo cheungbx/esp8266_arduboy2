@@ -139,7 +139,7 @@ Simple Steps to convert Arduboy games to run on ESP8266 Arduboy.
 * change "#include arduboy.h" to "#include arduboy2.h"
 * add "BeepPin1 beep;"
 * add "sound() function"
-* use the ArduboyTone library from ESPBOY
+* use the ArduboyTone library from ESPBOY (https://github.com/ESPboy-edu/ESPboy_Arduboy2_lib/tree/master/libs) included here for ease of downloading.
 * some games use a function pointer arrary instead of a switch function to pass control to different part of the codes as the game state changes. In ATMEGA32U4 the memory address are 2 bytes (single word) long, in ESP8266, the memory addresses are 4 bytyes ( doube word) long, So you need to 
  change all "pgm_read_word" to "pgm_read_dword"
 * if EEPROM is used by the game to keep configs/high scores,
