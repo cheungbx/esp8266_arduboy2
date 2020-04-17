@@ -139,22 +139,17 @@ Simple Steps to convert Arduboy games to run on ESP8266 Arduboy.
 * change "#include arduboy.h" to "#include arduboy2.h"
 * add "BeepPin1 beep;"
 * add "sound() function"
-* comment to remove // #include <ArduboyTones.h>
-* comment to remove // ArduboyTones sound(arduboy.audio.enabled);
-* change all "sound.tone" to "playTone"
+* use the ArduboyTone library from ESPBOY
 * some games use a function pointer arrary instead of a switch function to pass control to different part of the codes as the game state changes. In ATMEGA32U4 the memory address are 2 bytes (single word) long, in ESP8266, the memory addresses are 4 bytyes ( doube word) long, So you need to 
  change all "pgm_read_word" to "pgm_read_dword"
-* add beep.begin() after arduboy.begin();
 * if EEPROM is used by the game to keep configs/high scores,
 * refer to the notes in my github on how to add the eeprom.update function to your eeprom library in the ESP8266 library for your adruino ide. 
 
-* add EEPROM.begin(100) at setup() // 100 is just a rough max no. need to check the size 
+* add EEPROM.begin(1000) at setup() // 1000 is just a rough max no. need to check the size 
 * add EEPROM.commit() after the last EEPROM.put(), EEPORM.write() and EEPROM.update() of each blocks of code.
 
 Caveats 
 ===============
 
-** remove any reference to the Arduboy audio library that require timers to play back ground musics.
-* that part of the library has not yet been ported
 * remove any reference to the ATMlib for  complex sound output 
 * games that directly control the SPI bus to write to OLED display need much more work to port instead of the simple steps above.
