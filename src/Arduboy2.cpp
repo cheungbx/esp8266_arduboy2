@@ -1138,6 +1138,10 @@ bool Arduboy2Base::justReleased(uint8_t button)
   return ((previousButtonState & button) && !(currentButtonState & button));
 }
 
+uint16_t Arduboy2Base::paddle(){
+  return (getPaddle());
+}
+
 bool Arduboy2Base::collide(Point point, Rect rect)
 {
   return ((point.x >= rect.x) && (point.x < rect.x + rect.width) &&

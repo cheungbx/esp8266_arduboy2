@@ -28,6 +28,10 @@
 #define max(a,b) ((a)>(b)?(a):(b))
 #define min(a,b) ((a)<(b)?(a):(b))
 
+#define maxVal(a,b) ((a)>(b)?(a):(b))
+#define minVal(a,b) ((a)<(b)?(a):(b))
+#define LHSWAP(w) (uint16_t)((((uint16_t)w)>>8)|(((uint16_t)w)<<8))
+
 // use Slimboy, because hopefully it is easier to convert than the original code
 #if defined(__AVR_ATmega328P__) || defined(ESP8266)
 #warning SLIMBOY!
@@ -56,6 +60,7 @@
 
 #define RGB_ON LOW   /**< For digitially setting an RGB LED on using digitalWriteRGB() */
 #define RGB_OFF HIGH /**< For digitially setting an RGB LED off using digitalWriteRGB() */
+#define PIN_ADC A0
 
 // ----- Arduboy pins -----
 #ifdef ARDUBOY_10
@@ -956,6 +961,8 @@ class Arduboy2Core
     // Used by the ARDUBOY_NO_USB macro. This should not be called
     // directly from a sketch.
     void static mainNoUSB();
+
+    uint16_t static getPaddle();
 
   protected:
     // internals

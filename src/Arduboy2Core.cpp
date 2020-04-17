@@ -601,6 +601,15 @@ void Arduboy2Core::digitalWriteRGB(uint8_t color, uint8_t val)
 #endif
 }
 
+uint16_t Arduboy2Core::getPaddle(){
+
+  // digitalWrite(PIN_BUTTONS,LOW);
+  // digitalWrite(PIN_PADDLE,HIGH);
+  // digitalWrite(PIN_PADDLE2,LOW);
+
+  return analogRead(PIN_ADC);
+}
+
 /* Buttons */
 
 
