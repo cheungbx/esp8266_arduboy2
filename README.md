@@ -143,7 +143,7 @@ Simple Steps to convert Arduboy games to run on ESP8266 Arduboy.
 * some games use a function pointer arrary instead of a switch function to pass control to different part of the codes as the game state changes. In ATMEGA32U4 the memory address are 2 bytes (single word) long, in ESP8266, the memory addresses are 4 bytyes ( doube word) long, So you need to 
  change all "pgm_read_word" to "pgm_read_dword"
 * if EEPROM is used by the game to keep configs/high scores,
-* refer to the notes in my github on how to add the eeprom.update function to your eeprom library in the ESP8266 library for your adruino ide. 
+* refer to the notes in my github EEPROMnotes.txt on how to add the eeprom.update function to your eeprom library in the ESP8266 library for your adruino ide. 
 
 * add EEPROM.begin(1000) at setup() // 1000 is just a rough max no. need to check the size 
 * add EEPROM.commit() after the last EEPROM.put(), EEPORM.write() and EEPROM.update() of each blocks of code.
